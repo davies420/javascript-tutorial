@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <marquee behavior="scroll" direction="up"> we gon live forever for the Light</marquee>
+        <p id="live"
+        > we ain't dying yet ,keep it  moving fuck what they talking 'bout
+    </p>
+        
+    </h1>
+    <script>
+        function light(sw) {
+           var pic;
+           if (sw == 0)  {
+               pic = "/image/pic_bulboff.gif"
+           }else {
+               pic = "/image/pic_bulbon.gif"
+        }
+        document.getElementById("forEver").src = pic;
+    }
+    </script>
+    <img id="forEver" src="/image/pic_bulboff.gif" width="100" height="180">
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light (0)" >Light Off</button>
+    </p>
+    <script>
+        function myfunction() {
+        document.getElementById("live").style.fontsize ="25px"
+        document.getElementById("live").style.color = "blue"
+        document.getElementById("live").style.backgroundColor = "yellow"
+
+        }
+    </script>
+    <button type="button" onclick="myfunction()">Click Me</button>
+</body>
+</html>
